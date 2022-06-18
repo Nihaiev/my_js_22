@@ -5,4 +5,8 @@ const message = 'Добро пожаловать!';
 const isOpen = true;
 const shouldConfirm = false;
 
-console.log(totalPrice);
+const type = typeof true;
+console.log(type);
+
+// console.log(totalPrice); метод викликає аргумент зі скобок в консоль
+
