@@ -56,12 +56,30 @@
 //   name = 'Steve';
 // } console.log(name);
 
-/*
-* цикл while
-  */
+// /*
+// * цикл while
+//   */
 
-let i = 0;
-while (i < 100) {
-  i += 1;
-  console.log(i);
+// let i = 0;
+// while (i < 100) {
+//   i += 1;
+//   console.log(i);
+// }
+// function calculateTotalPrice (orderedQuantity, pricePerItem) {
+//   // Change code below this line
+//   const totalPrice = orderedQuantity * pricePerItem;
+
+//   // Change code above this line
+//   return totalPrice;
+// };
+// console.log(calculateTotalPrice);
+
+function makeOrderMessage(orderedQuantity, pricePerDroid, deliveryFee) {
+  // Change code below this line
+const message = `You ordered droids worth ${pricePerDroid} credits. Delivery ${deliveryFee} credits is included in total price.`;
+
+
+  // Change code above this line
+  return message;
 }
+console.log(makeOrderMessage);
