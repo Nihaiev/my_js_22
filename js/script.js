@@ -31,9 +31,37 @@
 // console.log(add(10, 20, 30));
 // console.log(add(5, 10, 15));
 
-function makeMessage (name, price) {
-  // Change code below this line
-   const message = ('You picked ${name}, price per item is ${price} credits') ;
-  // Change code above this line
-  return message;
-};
+// function makeMessage (name, price) {
+//   // Change code below this line
+//    const message = ('You picked ${name}, price per item is ${price} credits') ;
+//   // Change code above this line
+//   return message;
+// };
+
+// тернарний оператор
+
+// const isUser = true;
+// // if () {
+// //   else {
+    
+// //   }
+// // }
+// const result = isUser ? 'це користоувач': 'Це бот';
+// isUser ?
+
+// Область видимості
+// є локальна і глобальна зона видимості
+// let mane = 'Rob';
+// if (true) {
+//   name = 'Steve';
+// } console.log(name);
+
+/*
+* цикл while
+  */
+
+let i = 0;
+while (i < 100) {
+  i += 1;
+  console.log(i);
+}
