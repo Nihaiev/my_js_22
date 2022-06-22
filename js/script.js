@@ -18,15 +18,22 @@
 // console.log(result); // 2550
 
 
-function add(a, b, c) {
+// function add(a, b, c) {
+//   // Change code below this line
+// return a * b * c;
+
+//   // Change code above this line
+// }
+
+// add(2, 5, 8); // 15
+
+// console.log(add(15, 27, 10));
+// console.log(add(10, 20, 30));
+// console.log(add(5, 10, 15));
+
+function makeMessage (name, price) {
   // Change code below this line
-return a * b * c;
-
+   const message = ('You picked ${name}, price per item is ${price} credits') ;
   // Change code above this line
-}
-
-add(2, 5, 8); // 15
-
-console.log(add(15, 27, 10));
-console.log(add(10, 20, 30));
-console.log(add(5, 10, 15));
+  return message;
+};
