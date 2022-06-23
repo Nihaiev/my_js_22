@@ -74,12 +74,41 @@
 // };
 // console.log(calculateTotalPrice);
 
-function makeOrderMessage(orderedQuantity, pricePerDroid, deliveryFee) {
-  // Change code below this line
-const message = `You ordered droids worth ${pricePerDroid} credits. Delivery ${deliveryFee} credits is included in total price.`;
+// function makeOrderMessage(orderedQuantity, pricePerDroid, deliveryFee) {
+//   // Change code below this line
+// const message = `You ordered droids worth ${pricePerDroid} credits. Delivery ${deliveryFee} credits is included in total price.`;
 
 
-  // Change code above this line
-  return message;
+//   // Change code above this line
+//   return message;
+// }
+// console.log(makeOrderMessage);
+
+/*
+* Конструкция if...else может проверить и среагировать на выполнение или невыполнение только одного условия.
+*/
+
+// let cost;
+// const subscription = "pro";
+
+// if (subscription === "pro") {
+//   cost = 100;
+// } else {
+//   cost = 0;
+// }
+
+// console.log(cost); // 100
+let cost;
+const subscription = "premium";
+
+if (subscription === "free") {
+  cost = 0;
+} else if (subscription === "pro") {
+  cost = 100;
+} else if (subscription === "premium") {
+  cost = 500;
+} else {
+  console.log(`Invalid subscription type - ${subscription}`);
 }
-console.log(makeOrderMessage);
+
+console.log(cost); // 500
