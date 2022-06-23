@@ -98,17 +98,54 @@
 // }
 
 // console.log(cost); // 100
-let cost;
-const subscription = "premium";
 
-if (subscription === "free") {
-  cost = 0;
-} else if (subscription === "pro") {
-  cost = 100;
-} else if (subscription === "premium") {
-  cost = 500;
-} else {
-  console.log(`Invalid subscription type - ${subscription}`);
+
+// let cost;
+// const subscription = "premium";
+
+// if (subscription === "free") {
+//   cost = 0;
+// } else if (subscription === "pro") {
+//   cost = 100;
+// } else if (subscription === "premium") {
+//   cost = 500;
+// } else {
+//   console.log(`Invalid subscription type - ${subscription}`);
+// }
+
+// console.log(cost); // 500
+
+/*
+*Используются для сравнения двух значений. Результатом своего выполнения возвращают буль - true или false, то есть «да» или «нет».
+* > - больше
+* < - меньше
+* >= - больше или равно
+* <= - меньше или равно
+*/
+
+function checkPassword(password) {
+  const ADMIN_PASSWORD = 'jqueryismyjam';
+  let message;
+
+  if (password === ADMIN_PASSWORD) { // Change this line
+    message =  'Canceled by user!';
+  } else if (password === ADMIN_PASSWORD) { // Change this line
+    message = 'Welcome!';
+  } else {
+    message = 'Access denied, wrong password!';
+  }
+
+  return message;
 }
+console.log(checkPassword("mangohackzor"));
+console.log(checkPassword(null));
+console.log(checkPassword("polyhax"));
+console.log(checkPassword("jqueryismyjam"));
 
-console.log(cost); // 500
+/*
+*Функция checkPassword(password) получает пароль пользователя в параметр password, проверяет его на совпадение с паролем администратора в переменной ADMIN_PASSWORD и возвращает сообщение о результате сравнения, хранящееся в переменной message.
+*Если значение параметра password равно null, значит пользователь отменил операцию и в message записывается строка "Canceled by user!".
+*Если значение параметра password совпадает со значением ADMIN_PASSWORD, в переменную message присваивается строка "Welcome!".
+*Если ни одно из предыдущих условий не выполнилось, в переменную message записывается строка "Access denied, wrong password!".
+*
+*/
