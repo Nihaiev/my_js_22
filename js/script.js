@@ -123,24 +123,24 @@
 * <= - меньше или равно
 */
 
-function checkPassword(password) {
-  const ADMIN_PASSWORD = 'jqueryismyjam';
-  let message;
+// function checkPassword(password) {
+//   const ADMIN_PASSWORD = 'jqueryismyjam';
+//   let message;
 
-  if (password === ADMIN_PASSWORD) { // Change this line
-    message =  'Canceled by user!';
-  } else if (password === ADMIN_PASSWORD) { // Change this line
-    message = 'Welcome!';
-  } else {
-    message = 'Access denied, wrong password!';
-  }
+//   if (password === ADMIN_PASSWORD) { // Change this line
+//     message =  'Canceled by user!';
+//   } else if (password === ADMIN_PASSWORD) { // Change this line
+//     message = 'Welcome!';
+//   } else {
+//     message = 'Access denied, wrong password!';
+//   }
 
-  return message;
-}
-console.log(checkPassword("mangohackzor"));
-console.log(checkPassword(null));
-console.log(checkPassword("polyhax"));
-console.log(checkPassword("jqueryismyjam"));
+//   return message;
+// }
+// console.log(checkPassword("mangohackzor"));
+// console.log(checkPassword(null));
+// console.log(checkPassword("polyhax"));
+// console.log(checkPassword("jqueryismyjam"));
 
 /*
 *Функция checkPassword(password) получает пароль пользователя в параметр password, проверяет его на совпадение с паролем администратора в переменной ADMIN_PASSWORD и возвращает сообщение о результате сравнения, хранящееся в переменной message.
@@ -149,3 +149,40 @@ console.log(checkPassword("jqueryismyjam"));
 *Если ни одно из предыдущих условий не выполнилось, в переменную message записывается строка "Access denied, wrong password!".
 *
 */
+
+// Тернарник
+
+function checkStorage(available, ordered) {
+  // let message;
+  // Change code below this line
+
+  // if (ordered > available) {
+  //   message = "Not enough goods in stock!";
+  // } else {
+  //   message = "The order is accepted, our manager will contact you";
+  // }
+const message = ordered >= available ? "Not enough goods in stock!" : "The order is accepted, our manager will contact you";
+
+  // Change code above this line
+  return message;
+}
+
+console.log(checkStorage(100, 50));
+console.log(checkStorage(100, 130));
+console.log(checkStorage(200, 20));
+console.log(checkStorage(200, 150));
+console.log(checkStorage(150, 180));
+
+function checkStorage(available, ordered) {
+  let message;
+
+const message = ordered > available ? 'The order is accepted, our manager will contact you' : 'Not enough goods in stock!' ;
+
+  return message;
+}
+
+console.log(checkStorage(100, 50));
+console.log(checkStorage(100, 130));
+console.log(checkStorage(200, 20));
+console.log(checkStorage(200, 150));
+console.log(checkStorage(150, 180));
