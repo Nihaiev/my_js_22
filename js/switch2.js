@@ -46,36 +46,76 @@ switch (значення) {
 // console.log(getSubscriptionPrice("starter"));
 
 
-function checkPassword(password) {
-  const ADMIN_PASSWORD = "jqueryismyjam";
+// function checkPassword(password) {
+//   const ADMIN_PASSWORD = "jqueryismyjam";
+//   let message;
+//   // Change code below this line
+
+//   // if (password === null) {
+//   //   message = "Canceled by user!";
+//   // } else if (password === ADMIN_PASSWORD) {
+//   //   message = "Welcome!";
+//   // } else {
+//   //   message = "Access denied, wrong password!";
+//   // }
+
+//    switch (password) { // Change this line
+//     case null: // Change this line
+//       message = "Canceled by user!"; // Change this line
+//       break;
+
+//     case ADMIN_PASSWORD: // Change this line
+//       message = "Welcome!"; // Change this line
+//       break;
+// default: message ="Access denied, wrong password!"
+
+//   }
+
+//   // Change code above this line
+//   return message;
+// }
+
+// console.log(checkPassword("mangohackzor"));
+// console.log(checkPassword(null));
+// console.log(checkPassword("polyhax"));
+// console.log(checkPassword("jqueryismyjam"));
+
+/*
+*Список країн і вартість доставки:
+
+China - 100 кредитів
+Chile - 250 кредитів
+Australia - 170 кредитів
+Jamaica - 120 кредитів
+*/ 
+
+function getShippingCost(country) {
   let message;
-  // Change code below this line
+  const china = 100;
+  const chile = 250;
+  const australia = 170;
+  const jamaica = 100;
 
-  // if (password === null) {
-  //   message = "Canceled by user!";
-  // } else if (password === ADMIN_PASSWORD) {
-  //   message = "Welcome!";
-  // } else {
-  //   message = "Access denied, wrong password!";
-  // }
-
-   switch (password) { // Change this line
-    case null: // Change this line
-      message = "Canceled by user!"; // Change this line
+  switch (country) {
+    case "China":
+      message = `Shipping to ${country} will cost ${china} credits`;
       break;
-
-    case ADMIN_PASSWORD: // Change this line
-      message = "Welcome!"; // Change this line
+    case "Chile":
+      message = `Shipping to ${country} will cost ${chile}  credits`;
       break;
-default: message ="Access denied, wrong password!"
-
+    case "Australia":
+      message = `Shipping to ${country} will cost ${australia}  credits`;
+      break;
+    case "Jamaica":
+      message = `Shipping to ${country} will cost ${jamaica} credits`;
+      break;
+    default: message = "Sorry, there is no delivery to your country";
   }
-
-  // Change code above this line
   return message;
 }
-
-console.log(checkPassword("mangohackzor"));
-console.log(checkPassword(null));
-console.log(checkPassword("polyhax"));
-console.log(checkPassword("jqueryismyjam"));
+  console.log(getShippingCost("Australia"));
+  console.log(getShippingCost("Germany"));
+  console.log(getShippingCost("China"));
+  console.log(getShippingCost("Chile"));
+  console.log(getShippingCost("Jamaica"));
+  console.log(getShippingCost("Sweden"));
