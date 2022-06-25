@@ -19,3 +19,29 @@ switch (значення) {
 Оператор break в кінці кожного блоку case необхідний, щоб перервати подальші перевірки та одразу перейти до коду після switch у тому разі, коли перевірка на рівність повернула true.
 */
 
+function getSubscriptionPrice(type) {
+  let price;
+  // Change code below this line
+
+ switch (type) { // Change this line
+    case "starter": // Change this line
+      price = 0; // Change this line
+      break;
+
+    case "professional": // Change this line
+      price = 20; // Change this line
+      break;
+
+    case "organization": // Change this line
+      price = 50; // Change this line
+      break;
+  }
+
+  // Change code above this line
+  return price;
+}
+
+console.log(getSubscriptionPrice("professional"));
+console.log(getSubscriptionPrice("organization"));
+console.log(getSubscriptionPrice("starter"));
+
