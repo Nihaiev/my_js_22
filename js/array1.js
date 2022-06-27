@@ -8,5 +8,7 @@ const lastIndex = friends.length - 1;
 
 for (let i = 0; i <= lastIndex; i += 1) {
     // console.log(i);
-    console.log(friends[i]);
+    console.log(friends[i]); // звертання до кожного елементу масиву на ітерації 
 }
+
+//40:00
