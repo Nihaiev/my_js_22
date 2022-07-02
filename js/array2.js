@@ -49,14 +49,41 @@
 *
 */
 
-function getCommonElements(array1, array2) {
-  const uniqieElements = [];
-  for (const element of array1) {
-    if (array2.includes(element)) {
-      uniqieElements.push(element);
-    }
-  }
-  return uniqieElements;
-}
+// function getCommonElements(array1, array2) {
+//   const uniqieElements = [];
+//   for (const element of array1) {
+//     if (array2.includes(element)) {
+//       uniqieElements.push(element);
+//     }
+//   }
+//   return uniqieElements;
+// }
 
-console.log(getCommonElements([1, 2, 3], [2, 4]));
+// console.log(getCommonElements([1, 2, 3], [2, 4]));
+
+// function calculateTotalPrice(order) {
+//   let total = 0;
+
+// for (const total of order) {
+//     total += order;
+// }
+
+//   return total;
+// }
+// console.log(calculateTotalPrice([12, 85, 37, 4]));
+// console.log(calculateTotalPrice([164, 48, 291]));
+// console.log(calculateTotalPrice([412, 371, 94, 63, 176]));
+// console.log(calculateTotalPrice([]));
+// console.log(calculateTotalPrice());
+
+const a = 3 % 3;
+const b = 4 % 3;
+const c = 11 % 4;
+const d = 12 % 7;
+const e = 8 % 3;
+
+console.log(a);
+console.log(b);
+console.log(c);
+console.log(d);
+console.log(e);
